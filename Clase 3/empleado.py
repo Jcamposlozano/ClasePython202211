@@ -9,7 +9,7 @@ class Empleado():
 
     def saludar(self):
         print(str("Hola {} {} como estas?").format(self.apellido,self.nombre))
-
+        
     def setSueldo(self, sueldo):
         try:
             float(sueldo)
