@@ -26,7 +26,9 @@ class Indicadores():
         salarioMinimo = [i.text() for i in pq('table').eq(7)('h1').items()]
         self.salarioMinimo = float(salarioMinimo[0].replace(".",'').replace("$",'').replace(",",'.'))
 
-        print(self.trm)
-        print(self.uvr)
-        print(self.dtf)
-        print(self.salarioMinimo)
+        respuesta = {'trm': self.trm,
+                    'uvr': self.uvr,
+                    'drf': self.dtf,
+                    'salarioMinimo': self.salarioMinimo}
+
+        return respuesta
