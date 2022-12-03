@@ -28,7 +28,7 @@ class Indicadores():
 
         respuesta = {'trm': self.trm,
                     'uvr': self.uvr,
-                    'drf': self.dtf,
+                    'dtf': self.dtf,
                     'salarioMinimo': self.salarioMinimo}
 
         return respuesta
