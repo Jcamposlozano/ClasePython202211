@@ -15,8 +15,7 @@ class Calculadora():
         if b == 0: 
             print("error base 0")
         else:
-            print(a/b)
-
+            print(str(a/b))
 
     def comversorDivisas(self, **kwargs):
         i = Indicadores().ExtraeData()
